@@ -1,0 +1,23 @@
+1️⃣ Problem: Pivoting Sales Data by Months
+Scenario:
+You have a table named sales that records sales made by different employees in different months.
+
+Table Schema (sales):
+employee	month	sales_amount
+Alice	    Jan	    5000
+Alice	    Feb	    7000
+Bob	        Jan	    6000
+Bob	        Mar	    8000
+Charlie	    Feb	    6500
+
+Task:
+Pivot the table to display employees as rows and months as columns with sales values.
+
+Expected Output:
+employee	Jan	    Feb	    Mar
+Alice	    5000	7000	NULL
+Bob	        6000	NULL	8000
+Charlie	    NULL	6500	NULL
+
+Hint for Query:
+Use CASE statements and MAX() to pivot sales data.

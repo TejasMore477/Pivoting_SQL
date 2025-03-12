@@ -1,0 +1,24 @@
+2️⃣ Problem: Pivoting Employee Work Shifts
+Scenario:
+You have a table named work_shifts that records the shift (Morning, Evening, Night) of employees on different days.
+
+Table Schema (work_shifts):
+employee	day	        shift
+Alice	    Monday	    Morning
+Alice	    Tuesday	    Evening
+Bob	        Monday	    Night
+Bob	        Wednesday	Morning
+Charlie	    Tuesday	    Night
+
+
+Task:
+Pivot the table to display employees as rows and days as columns with shift values.
+
+Expected Output:
+employee	Monday	 Tuesday	 Wednesday
+Alice	    Morning	 Evening    NULL
+Bob	        Night	 NULL	    Morning
+Charlie	    NULL	 Night	    NULL
+
+Hint for Query:
+Use CASE statements inside MAX() and group by employee.

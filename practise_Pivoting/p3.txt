@@ -1,0 +1,25 @@
+3️⃣ Problem: Pivoting Exam Scores by Subject
+Scenario:
+You have a table named exam_scores where students take exams in different subjects.
+
+Table Schema (exam_scores):
+
+student	subject	score
+Alice	Math	85
+Alice	Science	90
+Bob	    Math	78
+Bob	    History	88
+Charlie	Science	92
+
+Task:
+Pivot the table to display students as rows and subjects as columns with scores as values.
+
+Expected Output:
+
+student	Math	Science	 History
+Alice	85	    90	     NULL
+Bob	    78	    NULL	 88
+Charlie	NULL	92	     NULL
+
+Hint for Query:
+Use CASE statements inside MAX() and group by student.
